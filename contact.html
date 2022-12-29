@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id                    = "container">
+        
+        <header>
+            <div id            = "titre_principal">
+                <div id        = "logo">
+                    <div id="logo1"><img src="image/films.png" alt="logo"/></div>
+                </div>
+            </div>
+            <div id="logo-txt">
+                <h1>Festival des Films de Plein Air</h1>
+                <h2>Du 5 au 8 août au parc Monceau à Paris</h2>
+            </div>  
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Accueil</a></li>
+                    <li><a href = "actu.html">Actualités</a></li>
+                    <li><a href = "index.html#txt">Films</a></li>
+                    <li><a href = "index.html#association">A propos de</a></li>
+
+                </ul>
+            </nav>
+        </header><br>
+        <strong>Merci de remplir le formulaire suivant pour réserver vos places</strong>
+        <div id="bloc-page">
+            
+    <form method="post" action="traitement.php">
+        <fieldset>
+            <legend>Vos coordonées</legend>    
+                <div id="name">
+                <table>
+                    <tr>
+                        <td width="20%"> Nom</td>
+                        <td width="20%"><input type="text" name="nom" required autofocus/></td>
+                        <td width="20%"> Prénom</td>
+                        <td width="20%"><input type="text" name="nom" required/></td>
+                        <td width="10%"> Age</td>
+                        <td width="10%" colspan="collapse"><input type="number" name="age" required /></td>
+                    </tr>
+                    <tr>
+                        <td width="20%">Téléphone</td>
+                        <td><input type="tel" name="tel" required/></td>
+                    </tr>   
+                    <tr>
+                        <td width="20%">Email</td>
+                        <td><input type="email" name="email" required/></td>
+                    </tr>  
+                </table>
+                </div>
+                   
+            </fieldset>
+            <fieldset>
+                <legend>Réservez : </legend>
+            <p>
+                <div id="number"><label>Nombre de personnes </label> : <input type="number" name="number" required/><br></div><br>
+                Cochez les films que vous souhaitez voir :<br />
+                <div id="liste_des_films">
+                    <div class="film">
+                        jeudi 6 aôut<br>
+                        <input type="checkbox" name="a_bout_de_souffle" id="a_bout_de_souffle" /> <label for="a_bout_de_souffle">A bout de souflle</label><br>
+                        <input type="checkbox" name="le_petit_soldat" id="le_petit_soldat" /> <label for="le_petit_soldat">Le petit soldat</label><br>
+                        vendredi 7 aôut<br>
+                        <input type="checkbox" name="un_hero_tres_discret" id="un_hero_tres_discret" /> <label for="un_hero_tres_discret">Un héro tres discret</label><br>
+                        <input type="checkbox" name="sur_mes_levres" id="sur_mes_levres" /> <label for="sur_mes_levres">Sur mes lèvres</label>
+                    </div>
+                    <div class="film">
+                        samedi 8 aôut<br>
+                        <input type="checkbox" name="le_deuxieme_souffle" id="le_deuxieme_souffle" /> <label for="le_deuxieme_souffle">Le deuxième souflle</label><br>
+                        <input type="checkbox" name="le_cercle_rouge" id="le_cercle_rouge" /> <label for="le_cercle_rouge">Le cercle rouge</label><br>
+                        dimanche 9 aôut<br>
+                        <input type="checkbox" name="le_clan_des_siciliens" id="le_clan_des_siciliens" /> <label for="le_clan_des_siciliens">Le clan des siciliens</label><br>
+                        <input type="checkbox" name="un_singe_en_hivers" id="un_singe_en_hivers" /> <label for="un_singe_en_hivers">Un singe en hivers</label>
+                    </div>
+                   
+                </div>
+            </p>
+        </fieldset>
+        <p>
+        <input type="submit" value="Envoyer"/>
+        </p>
+    </form>
+    <div id="adresse">
+        <h3> Nos contacts : </h3>
+        <p> Les Films De Plein Air <br>
+        11 rue de tralala 75015 Paris<br><br>
+        <strong>Email :</strong> lesfilmsdepleinair@gmail.com<br><br>
+        <strong>Tel :</strong>  06 12 34 56 78</p>
+        <div id="map">
+            <iframe width="500" height="300" class="map-resp" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8737382034997!2d2.3067663154928533!3d48.879683479289554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1643380154688!5m2!1sfr!2sfr" 
+            style="border:0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+
+    </div>
+</div>
+    <p><a href="index.html">Retour à l'accueil</a><p>
+        <footer>
+            <div id="mentions_legales"><a href="mentions.html">mentions légales</a><br>
+                <a href="#logo">haut de page</a></div>
+            <div class="reseaux"><a href="https://fr-fr.facebook.com/" title="facebook" target="blank"><img src="image/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com/?lang=fr3" title="twitter" target="blank"><img src="image/twitter.png" alt="twitter"></a>
+                <a href="https://www.vimeo.com/" title="vimeo" target="blank"><img src="image/vimeo.png" alt="vimeo"></a>
+            </div>
+        </footer>
+</body>
+</html>
